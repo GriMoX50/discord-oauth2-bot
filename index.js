@@ -76,19 +76,12 @@ client.on("messageCreate", async (ctx) => {
           })
         }
         break;
-      case "list":
-        var content = ""
-        const blrank = db.all().filter((data) => data.ID.startsWith(`wl_`)).sort((a, b) => b.data - a.data);
-
-        for (let i in blrank) {
-          if (blrank[i].data === null) blrank[i].data = 0;
-          content += `\`${blrank.indexOf(blrank[i]) + 1}\` ${client.users.cache.get(blrank[i].ID.split("_")[1]).tag} (\`${client.users.cache.get(blrank[i].ID.split("_")[1]).id}\`)\n`
-        }
-
+     case "list":
+        
         ctx.channel.send({
           embeds: [{
-            title: `${emoji.user} Whitelisted Users`,
-            description: `${content}`,
+            title: `${emoji.wrld} Whitelisted Users`,
+            description: `${forgetful.owners}`,
             color: "0000000",
             footer: {
               "text": "\u004d\u0061\u0064\u0065\u0020\u0062\u0079\u0020\u0066\u006f\u0072\u0067\u0065\u0074\u0066\u0075\u006c\u0023\u0030\u0030\u0030\u0031",
