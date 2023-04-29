@@ -37,7 +37,7 @@ client.on("messageCreate", async (ctx) => {
 
 
             embeds: [{
-              description: `${emoji.new} **${user.username}** is already whitelist`,
+              description: `${emoji.err} **${user.username}** is already whitelist`,
               color: "0000000",
               footer: {
                 "text": "\u004d\u0061\u0064\u0065\u0020\u0062\u0079\u0020\u0066\u006f\u0072\u0067\u0065\u0074\u0066\u0075\u006c\u0023\u0030\u0030\u0030\u0031",
