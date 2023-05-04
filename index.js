@@ -282,7 +282,7 @@ client.on("messageCreate", async (ctx) => {
 		},
 		{
 			name: `${emoji.wrld} Total On RestoreCord`,
-			value: `56`,
+			value: `0`,
 			inline: true,
 		}
 	],
